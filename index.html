@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> feedback form</title>
+    <link rel="stylesheet" href="form.css">
+        <css></css>
+    </link>
+</head>
+<body>
+    <div id="title">
+        <h1 class="bold">A Quick Survey</h1>
+        <p class="bold" id="description">Help us improve the quality of our service by filling out the below form:</p>
+    </div>
+    <form id="survey-form">
+            <label for="name">Please enter your name: </label><br> 
+            <input type="text" id="name" name="name" required><br><br>     
+            <label for="email">Please enter your email address: </label><br>   
+            <input type="email" id="email" name="email" required><br><br>   
+            <label for="number">Age (optional): </label><br>   
+            <input type="number" id="number" name="number" min="0" max="120"><br><br>    
+            <label for="date">What date would you be free to discuss your survey further (optional): </label><br>   
+            <input type="date" id="date" name="date"><br><br>    
+            <div>
+                <legend>How good do you view the service recieved, choose one of the 3 options:</legend>
+                    <input type="radio" id="one" name="items" value="one">  
+                    <label for="one">Poor</label><br> 
+                    <input type="radio" id="two" name="items" value="two">
+                    <label for="two">Good</label><br>
+                    <input type="radio" id="three" name="items" value="three">
+                    <label for="three">Very good</label><br><br>  
+            </div>
+            <div>
+                <legend>What products would you consider buying from us?</legend>
+                    <input type="checkbox" id="one" name="items" value="one">  
+                    <label for="one">Coffee</label><br> 
+                    <input type="checkbox" id="two" name="items" value="two">
+                    <label for="two">Chocolate</label><br>
+                    <input type="checkbox" id="three" name="items" value="three">
+                    <label for="three">Tea</label><br> 
+                    <input type="checkbox" id="four" name="items" value="four">
+                    <label for="four">Sweets</label><br> 
+                    <input type="checkbox" id="five" name="items" value="five">
+                    <label for="five">Cake</label><br><br> 
+            </div>
+            <label for="coffee" id="dropdown">What is your favourite coffee?</label><br>
+            <select name="coffee" id="coffee">
+                <option value="Americano">Americano</option>
+                <option value="Espresso">Espresso</option>
+                <option value="Flat White">Flat White</option>
+                <option value="Latte">Latte</option>
+                <option value="Cappuccino">Cappuccino</option>
+            </select><br><br>
+            <label for="textarea">Do you have any additional comments? (optional)</label><br>
+            <textarea id="textarea" name="textarea" rows="4" cols="50">Any additional comments you have would be greatly appreciated and help us provide an enhanced service going forwards.
+            </textarea><br><br>
+            <input type="submit" value="Submit">  
+    </form>
+</body>
+</html>
